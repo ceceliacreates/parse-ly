@@ -2,3 +2,4 @@ node_modules
 .env
 .vscode
 .ds_store
+config/config.json
