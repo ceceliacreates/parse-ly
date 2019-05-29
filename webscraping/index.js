@@ -1,26 +1,34 @@
-const axios = require('axios');
 const cheerio = require('cheerio');
+const Nightmare = require('nightmare');
+
+const nightmare = Nightmare({ show: true });
 
 let pageNumber = 1;
 let url = "https://www.houseplant411.com/houseplant/page/" + pageNumber;
 
-axios.get(url).then(response => {
-    console.log(response.data);
+nightmare
+    .goto(url)
+    .wait('body')
+    .evaluate(() => document.querySelector('body').innerHTML)
+    .click('.resultsInd a')
+    .end()
+    .then(response => {
+        console.log(getData(response));
+    }).catch(err => {
+        console.log(err);
+    });
 
-    let getData = html => {
-        data = [];
-        const $ = cheerio.load(html);
-        $(".resultsMid").each((i, element) => {
-            data.push({
-                title: $(element).find(".resultName").text(),
-                link: $(element).find("a").attr("href")
-            });
+let getData = html => {
+    data = [];
+    const $ = cheerio.load(html);
+
+    $(".resultsMid").each((i, element) => {
+        data.push({
+            title: $(element).find(".resultName").text(),
+            image: $(element).find("img").attr("src"),
+            link: $(element).find("a").attr("href")
         });
-        console.log(data);
-    }
+    });
 
-    getData(response.data);
-
-}).catch(error => {
-    console.log(error);
-});
+    return data;
+}
