@@ -1,4 +1,6 @@
-*,
+body {
+  margin: 0px;
+}
 a {
   font-family: "Open Sans", sans-serif;
 }
@@ -13,7 +15,6 @@ a {
 
 .w-100 {
   width: 100%;
-  border: solid;
 }
 
 .container-fluid {
@@ -27,6 +28,8 @@ a {
 #header-bar {
   height: 100px;
   position: fixed;
+  background: #fff;
+  border-bottom: solid;
 }
 
 #brand {
@@ -59,11 +62,15 @@ a {
   background-color: #fbfbfb;
 }
 
-.survey-button {
-  padding: 5% 0;
+.survey-link {
+  padding: 10px;
+  position: relative;
+  bottom: -100px;
 }
 
 .homeimg {
   border: solid;
-  border-color: black;
+  border-radius: 50%;
+  position: relative;
+  bottom: -60px;
 }

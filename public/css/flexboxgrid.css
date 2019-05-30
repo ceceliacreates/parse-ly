@@ -787,25 +787,3 @@
     order: 1;
   }
 }
-
-.w-100 {
-  border-bottom: solid;
-}
-
-.homeimg {
-  border: solid;
-  border-radius: 50%;
-
-  position: relative;
-  bottom: -60px;
-}
-
-.surveylink {
-  border: solid;
-  border-color: black;
-}
-
-.project-title {
-  position: relative;
-  bottom: -100px;
-}
