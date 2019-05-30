@@ -12,6 +12,7 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.3",
-    "nightmare": "^3.0.2"
+    "nightmare": "^3.0.2",
+    "objects-to-csv": "^1.2.1"
   }
 }
