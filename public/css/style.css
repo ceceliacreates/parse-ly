@@ -27,7 +27,6 @@ a {
 #header-bar {
   height: 100px;
   position: fixed;
-  background: #fff;
 }
 
 #brand {
@@ -66,4 +65,5 @@ a {
 
 .homeimg {
   border: solid;
+  border-color: black;
 }
