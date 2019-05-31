@@ -1,0 +1,5 @@
+node_modules
+.env
+.vscode
+.ds_store
+plant.js
