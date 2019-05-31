@@ -12,7 +12,12 @@
   "dependencies": {
     "axios": "^0.18.0",
     "cheerio": "^1.0.0-rc.3",
+    "got": "^9.6.0",
+    "mysql2": "^1.6.5",
     "nightmare": "^3.0.2",
-    "objects-to-csv": "^1.2.1"
+    "objects-to-csv": "^1.2.1",
+    "sequelize": "^5.8.7",
+    "sequelize-cli": "^5.4.0",
+    "vo": "^4.0.2"
   }
 }

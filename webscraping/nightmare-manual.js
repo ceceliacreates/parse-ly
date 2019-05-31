@@ -3,17 +3,12 @@ const Nightmare = require('nightmare');
 const fs = require('fs');
 
 const nightmare = Nightmare({ show: true });
-
-let pageNumber = 1;
-let url = 'https://www.houseplant411.com/houseplant/page/' + pageNumber;
+const url = "https://www.houseplant411.com/houseplant/how-to-grow-a-bird-of-paradise-plant-indoors";
 
 nightmare
     .goto(url)
     .wait('body')
-    .click('.resultName a')
-    .wait('body')
     .evaluate(() => document.querySelector('body').innerHTML)
-    .back()
     .end()
     .then(response => {
         console.log(getData(response));
@@ -43,10 +38,7 @@ let getData = html => {
         });
     });
 
-    // let plants = {}
-    // let plantsData = JSON.parse(JSON.stringify(data, null, 2))
-
-    fs.writeFile('plants.json', JSON.stringify(data, null, 2), (err) => {
+    fs.appendFile('plants.json', JSON.stringify(data, null, 2), (err) => {
         if (err) throw err;
     });
 
