@@ -5,7 +5,7 @@ module.exports = function (sequelize, DataTypes) {
         lightNeeds: DataTypes.INTEGER,
         waterNeeds: DataTypes.INTEGER,
         tempNeeds: DataTypes.INTEGER,
-        potSize: DataTypes.ARRAY,
+        potSize: DataTypes.STRING,
         poisonous: DataTypes.BOOLEAN
     });
     return Plant;

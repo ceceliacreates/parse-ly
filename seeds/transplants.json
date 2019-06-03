@@ -5,9 +5,7 @@
         "lightNeeds": 3,
         "waterNeeds": 3,
         "tempNeeds": 3,
-        "potSize": [
-            "small"
-        ],
+        "potSize": "small",
         "poisonous": false
     },
     {
@@ -16,9 +14,7 @@
         "lightNeeds": 3,
         "waterNeeds": 1,
         "tempNeeds": 2,
-        "potSize": [
-            "small"
-        ],
+        "potSize": "small",
         "poisonous": false
     },
     {
@@ -27,10 +23,7 @@
         "lightNeeds": 3,
         "waterNeeds": 2,
         "tempNeeds": 1,
-        "potSize": [
-            "medium",
-            "large"
-        ],
+        "potSize": "medium ,large",
         "poisonous": true
     },
     {
@@ -39,9 +32,7 @@
         "lightNeeds": 3,
         "waterNeeds": 2,
         "tempNeeds": 1,
-        "potSize": [
-            "small"
-        ],
+        "potSize": "small",
         "poisonous": true
     },
     {
@@ -50,9 +41,7 @@
         "lightNeeds": 3,
         "waterNeeds": 1,
         "tempNeeds": 1,
-        "potSize": [
-            "small"
-        ],
+        "potSize": "small",
         "poisonous": true
     },
     {
@@ -61,9 +50,7 @@
         "lightNeeds": 3,
         "waterNeeds": 1,
         "tempNeeds": 3,
-        "potSize": [
-            "small"
-        ],
+        "potSize": "small",
         "poisonous": true
     },
     {
@@ -72,9 +59,7 @@
         "lightNeeds": 2,
         "waterNeeds": 1,
         "tempNeeds": 2,
-        "potSize": [
-            "medium"
-        ],
+        "potSize": "medium",
         "poisonous": true
     },
     {
@@ -83,11 +68,7 @@
         "lightNeeds": 2,
         "waterNeeds": 1,
         "tempNeeds": 2,
-        "potSize": [
-            "small",
-            "medium",
-            "large"
-        ],
+        "potSize": "small, medium ,large",
         "poisonous": true
     },
     {
@@ -96,9 +77,7 @@
         "lightNeeds": 1,
         "waterNeeds": 1,
         "tempNeeds": 1,
-        "potSize": [
-            "large"
-        ],
+        "potSize": "large",
         "poisonous": true
     },
     {
@@ -107,9 +86,7 @@
         "lightNeeds": 2,
         "waterNeeds": 1,
         "tempNeeds": 1,
-        "potSize": [
-            "small"
-        ],
+        "potSize": "small",
         "poisonous": true
     },
     {
@@ -118,10 +95,7 @@
         "lightNeeds": 3,
         "waterNeeds": 3,
         "tempNeeds": 2,
-        "potSize": [
-            "medium",
-            "large"
-        ],
+        "potSize": "medium, large",
         "poisonous": false
     },
     {
@@ -130,10 +104,7 @@
         "lightNeeds": 1,
         "waterNeeds": 1,
         "tempNeeds": 1,
-        "potSize": [
-            "small",
-            "medium"
-        ],
+        "potSize": "small, medium",
         "poisonous": true
     },
     {
@@ -142,9 +113,7 @@
         "lightNeeds": 3,
         "waterNeeds": 1,
         "tempNeeds": 1,
-        "potSize": [
-            "small"
-        ],
+        "potSize": "small",
         "poisonous": false
     },
     {
@@ -153,11 +122,7 @@
         "lightNeeds": 3,
         "waterNeeds": 2,
         "tempNeeds": 1,
-        "potSize": [
-            "small",
-            "medium",
-            "large"
-        ],
+        "potSize": "small, medium, large",
         "poisonous": true
     },
     {
@@ -166,10 +131,7 @@
         "lightNeeds": 3,
         "waterNeeds": 2,
         "tempNeeds": 1,
-        "potSize": [
-            "small",
-            "medium"
-        ],
+        "potSize": "small ,medium",
         "poisonous": false
     },
     {
@@ -178,9 +140,7 @@
         "lightNeeds": 2,
         "waterNeeds": 1,
         "tempNeeds": 1,
-        "potSize": [
-            "large"
-        ],
+        "potSize": "large",
         "poisonous": false
     },
     {
@@ -189,30 +149,25 @@
         "lightNeeds": 2,
         "waterNeeds": 1,
         "tempNeeds": 2,
-        "potSize": [
-            "medium"
-        ],
+        "potSize": "medium",
         "poisonous": true
     },
     {
         "commonName": "Begonia Rex",
         "scientificName": "Begoniaceae",
         "lightNeeds": 3,
+        "waterNeeds": 1,
         "tempNeeds": 1,
-        "potSize": [
-            "large"
-        ],
+        "potSize": "large",
         "poisonous": true
     },
     {
         "commonName": "Bird of Paradise Plant",
         "scientificName": "Strelitzia",
         "lightNeeds": 3,
+        "waterNeeds": 1,
         "tempNeeds": 2,
-        "potSize": [
-            "medium",
-            "large"
-        ],
+        "potSize": "medium, large",
         "poisonous": true
     }
 ]
