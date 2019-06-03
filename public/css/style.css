@@ -75,6 +75,16 @@ a {
   bottom: -60px;
 }
 
+.dev-team {
+  position: relative;
+  left: 19px;
+}
+
+.social-links {
+  position: relative;
+  left: 25px;
+}
+
 .fa {
   padding: 20px;
   font-size: 30px;
