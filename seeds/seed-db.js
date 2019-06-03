@@ -1,9 +1,8 @@
 const db = require("../models");
 const fs = require("fs");
-require('dotenv').config({ debug: process.env.DEBUG })
+const path = require('path')
 
-
-let data = fs.readFileSync("./transplants.json");
+let data = fs.readFileSync(path.join(__dirname, "/transplants.json"));
 let transplants = JSON.parse(data);
 console.log(data)
 

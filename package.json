@@ -12,11 +12,12 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "chai-http": "^4.3.0",
-    "mocha": "^3.0.0"
+    "mocha": "^6.1.4"
   },
   "scripts": {
     "test": "mocha",
-    "start": "node server.js"
+    "start": "node server.js",
+    "seed": "node seeds/seed-db.js"
   },
   "repository": {
     "type": "git",
