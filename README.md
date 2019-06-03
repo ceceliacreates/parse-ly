@@ -6,8 +6,15 @@ An application to survey people looking to become house plant hobbyists that wil
 
 ### Technologies Used
 
-Bootstrap/Flexbox Grid
-jQuery
+- Bootstrap/Flexbox Grid
+- jQuery
+- webscraping
+
+### Challenges
+
+### Improvements
+
+- Forum: integrate a forum-like feature where users can share feedback, personal experiences with specific plants, share tips & tricks of plant care
 
 ### Team
 
