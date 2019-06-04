@@ -1,7 +1,7 @@
 module.exports = {
   "development": {
     "username": "root",
-    "password": "hotsriracha",
+    "password": process.env.DB_PASS,
     "database": "plantish_db",
     "host": "127.0.0.1",
     "dialect": "mysql"
