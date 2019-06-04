@@ -2,6 +2,7 @@ module.exports = function (sequelize, DataTypes) {
     const Plant = sequelize.define("Plant", {
         commonName: DataTypes.STRING,
         scientificName: DataTypes.STRING,
+        plantType: DataTypes.STRING,
         light: DataTypes.JSON,
         needsDirectLight: DataTypes.BOOLEAN,
         lightDifficulty: DataTypes.INTEGER,

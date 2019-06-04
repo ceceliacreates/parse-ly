@@ -248,10 +248,11 @@
         "scientificName": "Asparagus sprengeri fern",
         "plantType": "fern",
         "light": [
+            "medium",
             "high"
         ],
         "needsDirectLight": false,
-        "lightDifficulty": 3,
+        "lightDifficulty": 2,
         "waterDifficulty": 1,
         "temperature": [
             "cold",
@@ -259,7 +260,7 @@
             "warm"
         ],
         "tempDifficulty": 1,
-        "totalDifficulty": 5,
+        "totalDifficulty": 4,
         "potSize": [
             "small"
         ],
@@ -353,6 +354,194 @@
         ],
         "tempDifficulty": 2,
         "totalDifficulty": 5,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Begonia Rex",
+        "scientificName": "Begoniaceae",
+        "plantType": "tropical",
+        "light": [
+            "low",
+            "medium",
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 1,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 3,
+        "potSize": [
+            "medium"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Bird of Paradise Plant",
+        "scientificName": "Strelitzia",
+        "plantType": "flowering",
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": true,
+        "lightDifficulty": 3,
+        "waterDifficulty": 3,
+        "temperature": [
+            "cold",
+            "cool"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 9,
+        "potSize": [
+            "medium",
+            "large"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Bleeding Heart Vine",
+        "scientificName": "Clerodendrum",
+        "plantType": "flowering",
+        "light": [
+            "medium",
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 2,
+        "waterDifficulty": 3,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 6,
+        "potSize": [
+            "medium"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Boston Fern",
+        "scientificName": "Nephrolepis exaltata",
+        "plantType": "fern",
+        "light": [
+            "low",
+            "medium"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 2,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 5,
+        "potSize": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "isPoisonous": false
+    },
+    {
+        "commonName": "Bougainvillea",
+        "scientificName": "Bougainvillea",
+        "plantType": "flowering",
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": true,
+        "lightDifficulty": 3,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 6,
+        "potSize": [
+            "medium",
+            "large"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Bromeliad – Aechmea fasciata",
+        "scientificName": "Aechmea fasciata",
+        "plantType": "flowering",
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 3,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 7,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Bromeliad Guzmania",
+        "scientificName": "Bromeliaceae",
+        "plantType": "flowering",
+        "light": [
+            "low",
+            "medium",
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 1,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 3,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": false
+    },
+    {
+        "commonName": "Cactus Plant",
+        "scientificName": "Cereus Peruvianus monstrosis",
+        "plantType": "succulent",
+        "light": [
+            "medium",
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 2,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 4,
         "potSize": [
             "small",
             "medium"
