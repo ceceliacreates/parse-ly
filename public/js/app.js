@@ -9,6 +9,7 @@ $(function() {
   let light;
   let plantType;
   let potSize;
+  let request;
 
 //button event listener with switch case for question# id
 $("#survey").on("click", "button", function(event) {
@@ -78,7 +79,7 @@ $("#survey").on("click", "button", function(event) {
     case "submit":
       potSize = $("input:checked").val();
       $("#survey").empty();
-      let request = {
+      request = {
         "isPoisonous": isPoisonous,
         "diffRangeStart": diffRangeStart,
         "diffRangeEnd": diffRangeEnd,
@@ -93,9 +94,14 @@ $("#survey").on("click", "button", function(event) {
   }
 
   function getPlantMatch() {
-    $.get(function(data) {
-      console.log(data.request);
-    });
+    $.ajax({
+      method: "POST",
+      url: "/api/plants",
+      data: request
+    }).then(function (response) {
+      console.log(response);
+    })
   }
 })
 })
+

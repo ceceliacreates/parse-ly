@@ -6,4 +6,8 @@ module.exports = function(app) {
       res.json(plants);
     });
   });
+
+  app.post('/api/plants', function(req, res) {
+    console.log(req.body);
+  })
 };
