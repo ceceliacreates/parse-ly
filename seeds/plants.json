@@ -2,6 +2,7 @@
     {
         "commonName": "African Violet",
         "scientificName": "Saintpaulia ionantha",
+        "plantType": "flowering",
         "light": [
             "high"
         ],
@@ -21,6 +22,7 @@
     {
         "commonName": "Agave Plant",
         "scientificName": "Agave attenuata",
+        "plantType": "succulent",
         "light": [
             "high"
         ],
@@ -43,6 +45,7 @@
     {
         "commonName": "Alocasia",
         "scientificName": "Alocasia Amazonica",
+        "plantType": "tropical",
         "light": [
             "high"
         ],
@@ -64,6 +67,7 @@
     {
         "commonName": "Alocasia – Nebula",
         "scientificName": "Alocasia nebula imperialis",
+        "plantType": "tropical",
         "light": [
             "high"
         ],
@@ -85,6 +89,7 @@
     {
         "commonName": "Aloe Vera Plant",
         "scientificName": "Aloe Vera",
+        "plantType": "succulent",
         "light": [
             "high"
         ],
@@ -106,13 +111,16 @@
     {
         "commonName": "Amaryllis",
         "scientificName": "Hippeastrum",
+        "plantType": "flowering",
         "light": [
             "high"
         ],
         "needsDirectLight": false,
         "lightDifficulty": 3,
         "waterDifficulty": 2,
-        "temperature": "cool",
+        "temperature": [
+            "cool"
+        ],
         "tempDifficulty": 3,
         "totalDifficulty": 8,
         "potSize": [
@@ -124,6 +132,7 @@
     {
         "commonName": "Angel Wing Begonia",
         "scientificName": "Begonia Coccinea",
+        "plantType": "flowering",
         "light": [
             "high"
         ],
@@ -145,6 +154,7 @@
     {
         "commonName": "Anthurium",
         "scientificName": "Anthurium",
+        "plantType": "flowering",
         "light": [
             "high"
         ],
@@ -166,7 +176,8 @@
     },
     {
         "commonName": "Aralia Plant",
-        "scientificName": "Polyscias  fruticosa",
+        "scientificName": "Polyscias fruticosa",
+        "plantType": "shrub",
         "light": [
             "low",
             "medium",
@@ -183,13 +194,16 @@
         "tempDifficulty": 1,
         "totalDifficulty": 3,
         "potSize": [
-            "small"
+            "small",
+            "medium",
+            "large"
         ],
         "isPoisonous": true
     },
     {
         "commonName": "Areca Palm",
         "scientificName": "Dypsis lutescens",
+        "plantType": "palm",
         "light": [
             "high"
         ],
@@ -211,7 +225,8 @@
     },
     {
         "commonName": "Arrowhead Plant",
-        "scientificName": "Syngonium  podophyllum",
+        "scientificName": "Syngonium podophyllum",
+        "plantType": "vine",
         "light": [
             "low",
             "medium"
@@ -231,6 +246,7 @@
     {
         "commonName": "Asparagus Ferns",
         "scientificName": "Asparagus sprengeri fern",
+        "plantType": "fern",
         "light": [
             "high"
         ],
@@ -252,6 +268,7 @@
     {
         "commonName": "Azalea",
         "scientificName": "Rhododendron",
+        "plantType": "flowering",
         "light": [
             "high"
         ],
@@ -267,8 +284,78 @@
         "totalDifficulty": 6,
         "potSize": [
             "small",
+            "medium"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Baby’s Tears Plant",
+        "scientificName": "Soleirolia  helxine",
+        "plantType": "vine",
+        "light": [
+            "low",
+            "medium",
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 1,
+        "waterDifficulty": 3,
+        "temperature": [
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 6,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": false
+    },
+    {
+        "commonName": "Bamboo Palm",
+        "scientificName": "Chamaedorea seifrizii",
+        "plantType": "palm",
+        "light": [
+            "medium",
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 2,
+        "waterDifficulty": 2,
+        "temperature": [
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 6,
+        "potSize": [
+            "small",
             "medium",
             "large"
+        ],
+        "isPoisonous": true
+    },
+    {
+        "commonName": "Begonia Plant",
+        "scientificName": "Begonia",
+        "plantType": "flowering",
+        "light": [
+            "low",
+            "medium"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 2,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 5,
+        "potSize": [
+            "small",
+            "medium"
         ],
         "isPoisonous": true
     }
