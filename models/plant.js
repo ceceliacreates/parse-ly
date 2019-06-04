@@ -2,11 +2,15 @@ module.exports = function (sequelize, DataTypes) {
     const Plant = sequelize.define("Plant", {
         commonName: DataTypes.STRING,
         scientificName: DataTypes.STRING,
-        lightNeeds: DataTypes.INTEGER,
-        waterNeeds: DataTypes.INTEGER,
-        tempNeeds: DataTypes.INTEGER,
-        potSize: DataTypes.STRING,
-        poisonous: DataTypes.BOOLEAN
+        light: DataTypes.JSON,
+        needsDirectLight: DataTypes.BOOLEAN,
+        lightDifficulty: DataTypes.INTEGER,
+        waterDifficulty: DataTypes.INTEGER,
+        temperature: DataTypes.JSON,
+        tempDifficulty: DataTypes.INTEGER,
+        totalDifficulty: DataTypes.INTEGER,
+        potSize: DataTypes.JSON,
+        isPoisonous: DataTypes.BOOLEAN
     });
     return Plant;
 }

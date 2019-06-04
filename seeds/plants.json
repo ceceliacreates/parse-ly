@@ -2,172 +2,274 @@
     {
         "commonName": "African Violet",
         "scientificName": "Saintpaulia ionantha",
-        "lightNeeds": 3,
-        "waterNeeds": 3,
-        "tempNeeds": 3,
-        "potSize": "small",
-        "poisonous": false
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 3,
+        "temperature": [
+            "warm"
+        ],
+        "tempDifficulty": 3,
+        "potSize": [
+            "small"
+        ],
+        "totalDifficulty": 9,
+        "isPoisonous": false
     },
     {
         "commonName": "Agave Plant",
         "scientificName": "Agave attenuata",
-        "lightNeeds": 3,
-        "waterNeeds": 1,
-        "tempNeeds": 2,
-        "potSize": "small",
-        "poisonous": false
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": true,
+        "lightDifficulty": 3,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 7,
+        "potSize": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Alocasia",
         "scientificName": "Alocasia Amazonica",
-        "lightNeeds": 3,
-        "waterNeeds": 2,
-        "tempNeeds": 1,
-        "potSize": "medium ,large",
-        "poisonous": true
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 5,
+        "potSize": [
+            "small"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Alocasia – Nebula",
         "scientificName": "Alocasia nebula imperialis",
-        "lightNeeds": 3,
-        "waterNeeds": 2,
-        "tempNeeds": 1,
-        "potSize": "small",
-        "poisonous": true
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 2,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 6,
+        "potSize": [
+            "small"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Aloe Vera Plant",
         "scientificName": "Aloe Vera",
-        "lightNeeds": 3,
-        "waterNeeds": 1,
-        "tempNeeds": 1,
-        "potSize": "small",
-        "poisonous": true
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 6,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Amaryllis",
         "scientificName": "Hippeastrum",
-        "lightNeeds": 3,
-        "waterNeeds": 1,
-        "tempNeeds": 3,
-        "potSize": "small",
-        "poisonous": true
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 2,
+        "temperature": "cool",
+        "tempDifficulty": 3,
+        "totalDifficulty": 8,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Angel Wing Begonia",
         "scientificName": "Begonia Coccinea",
-        "lightNeeds": 2,
-        "waterNeeds": 1,
-        "tempNeeds": 2,
-        "potSize": "medium",
-        "poisonous": true
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 2,
+        "temperature": [
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 7,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Anthurium",
         "scientificName": "Anthurium",
-        "lightNeeds": 2,
-        "waterNeeds": 1,
-        "tempNeeds": 2,
-        "potSize": "small, medium ,large",
-        "poisonous": true
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 2,
+        "temperature": [
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 2,
+        "totalDifficulty": 7,
+        "potSize": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Aralia Plant",
         "scientificName": "Polyscias  fruticosa",
-        "lightNeeds": 1,
-        "waterNeeds": 1,
-        "tempNeeds": 1,
-        "potSize": "large",
-        "poisonous": true
-    },
-    {
-        "commonName": "Aralia Plant – Balfour",
-        "scientificName": "Polyscias-scutellaria",
-        "lightNeeds": 2,
-        "waterNeeds": 1,
-        "tempNeeds": 1,
-        "potSize": "small",
-        "poisonous": true
+        "light": [
+            "low",
+            "medium",
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 1,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 3,
+        "potSize": [
+            "small"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Areca Palm",
         "scientificName": "Dypsis lutescens",
-        "lightNeeds": 3,
-        "waterNeeds": 3,
-        "tempNeeds": 2,
-        "potSize": "medium, large",
-        "poisonous": false
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 2,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 6,
+        "potSize": [
+            "small",
+            "medium"
+        ],
+        "isPoisonous": false
     },
     {
         "commonName": "Arrowhead Plant",
         "scientificName": "Syngonium  podophyllum",
-        "lightNeeds": 1,
-        "waterNeeds": 1,
-        "tempNeeds": 1,
-        "potSize": "small, medium",
-        "poisonous": true
+        "light": [
+            "low",
+            "medium"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 2,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 4,
+        "isPoisonous": true
     },
     {
         "commonName": "Asparagus Ferns",
         "scientificName": "Asparagus sprengeri fern",
-        "lightNeeds": 3,
-        "waterNeeds": 1,
-        "tempNeeds": 1,
-        "potSize": "small",
-        "poisonous": false
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 1,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 5,
+        "potSize": [
+            "small"
+        ],
+        "isPoisonous": true
     },
     {
         "commonName": "Azalea",
         "scientificName": "Rhododendron",
-        "lightNeeds": 3,
-        "waterNeeds": 2,
-        "tempNeeds": 1,
-        "potSize": "small, medium, large",
-        "poisonous": true
-    },
-    {
-        "commonName": "Baby’s Tears Plant",
-        "scientificName": "Soleirolia  helxine",
-        "lightNeeds": 3,
-        "waterNeeds": 2,
-        "tempNeeds": 1,
-        "potSize": "small ,medium",
-        "poisonous": false
-    },
-    {
-        "commonName": "Bamboo Palm",
-        "scientificName": "Chamaedorea seifrizii",
-        "lightNeeds": 2,
-        "waterNeeds": 1,
-        "tempNeeds": 1,
-        "potSize": "large",
-        "poisonous": false
-    },
-    {
-        "commonName": "Begonia Plant",
-        "scientificName": "Begonia",
-        "lightNeeds": 2,
-        "waterNeeds": 1,
-        "tempNeeds": 2,
-        "potSize": "medium",
-        "poisonous": true
-    },
-    {
-        "commonName": "Begonia Rex",
-        "scientificName": "Begoniaceae",
-        "lightNeeds": 3,
-        "waterNeeds": 1,
-        "tempNeeds": 1,
-        "potSize": "large",
-        "poisonous": true
-    },
-    {
-        "commonName": "Bird of Paradise Plant",
-        "scientificName": "Strelitzia",
-        "lightNeeds": 3,
-        "waterNeeds": 1,
-        "tempNeeds": 2,
-        "potSize": "medium, large",
-        "poisonous": true
+        "light": [
+            "high"
+        ],
+        "needsDirectLight": false,
+        "lightDifficulty": 3,
+        "waterDifficulty": 2,
+        "temperature": [
+            "cold",
+            "cool",
+            "warm"
+        ],
+        "tempDifficulty": 1,
+        "totalDifficulty": 6,
+        "potSize": [
+            "small",
+            "medium",
+            "large"
+        ],
+        "isPoisonous": true
     }
 ]
