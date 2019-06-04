@@ -1,6 +1,11 @@
 body {
   margin: 0px;
+  background-image: url("https://s3-us-west-1.amazonaws.com/landgbucket/products/prod_0egY5e7MVw3QnA/main.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: auto;
 }
+
 a {
   font-family: "Open Sans", sans-serif;
 }
@@ -30,6 +35,7 @@ a {
   position: fixed;
   background: #fff;
   border-bottom: solid;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
 }
 
 #brand {
@@ -107,4 +113,12 @@ a {
 .fa-instagram {
   background: #125688;
   color: white;
+}
+
+h1 {
+  display: inline;
+  position: relative;
+  font: 30px Helvetica, Sans-Serif;
+  letter-spacing: 9px;
+  color: rgba(0, 153, 255, 0.637);
 }
