@@ -1,11 +1,12 @@
-//declares variables for survey values globally
-let name;
-let hasPets;
-let difficulty;
-let temperature;
-let light;
-let plantType;
-let potSize;
+$(function() {
+  //declares variables for survey values globally
+  let name;
+  let hasPets;
+  let difficulty;
+  let temperature;
+  let light;
+  let plantType;
+  let potSize;
 
 //button event listener with switch case for question# id
 $("#survey").on("click", "button", function(event) {
@@ -79,4 +80,5 @@ $("#survey").on("click", "button", function(event) {
       console.log(data.request);
     });
   }
-});
+})
+})
