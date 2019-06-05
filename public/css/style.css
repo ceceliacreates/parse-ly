@@ -1,27 +1,25 @@
 body {
-  margin: 0px;
-  background-image: url("https://s3-us-west-1.amazonaws.com/landgbucket/products/prod_0egY5e7MVw3QnA/main.jpg");
-  background-size: cover;
-  background-attachment: fixed;
-  background-size: auto;
+  margin: 1px;
 }
 
 a {
   font-family: "Open Sans", sans-serif;
 }
 
-.h-100vh {
+.about {
   height: calc(100% - 100px);
-  background: url("https://gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg")
-    no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  background-image: url("https://gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg");
   background-size: cover;
+  background-attachment: fixed;
+  background-size: auto;
 }
 
-.h-100 {
+.index {
   height: 100% !important;
+  background-image: url("https://s3-us-west-1.amazonaws.com/landgbucket/products/prod_0egY5e7MVw3QnA/main.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: auto;
 }
 
 .w-100 {
@@ -42,6 +40,7 @@ a {
   background: #fff;
   border-bottom: solid;
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  margin-top: -1px;
 }
 
 #brand {
@@ -49,7 +48,7 @@ a {
   font-size: 20px;
   color: #6ba4b8;
   position: relative;
-  bottom: 5px;
+  bottom: inherit;
 }
 
 .nav-link:first-child {
@@ -57,10 +56,10 @@ a {
 }
 
 .nav-link {
-  font-size: 14px;
+  font-size: 17px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #666;
+  color: #6ba4b8;
 }
 
 .active {
@@ -87,7 +86,8 @@ a {
   border-bottom: 1px solid green;
   border-left: 1px solid green;
   position: relative;
-  bottom: -191px;
+  left: 376px;
+  bottom: -480px;
   border-radius: 12px;
 }
 
@@ -100,12 +100,12 @@ a {
 
 .dev-team {
   position: relative;
-  left: 19px;
+  left: 4px;
 }
 
 .social-links {
   position: relative;
-  left: 25px;
+  left: 4px;
 }
 
 .fa {
@@ -142,6 +142,10 @@ a {
   font-family: Georgia;
 }
 
+#text {
+  color: white;
+}
+
 h1,
 h2,
 p {
@@ -150,4 +154,9 @@ p {
 
 .results {
   background-image: linear-gradient(to right, #c2e59c, #64b3f4);
+}
+
+ul {
+  position: relative;
+  left: -15px;
 }
