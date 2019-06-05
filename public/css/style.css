@@ -12,6 +12,12 @@ a {
 
 .h-100vh {
   height: calc(100% - 100px);
+  background: url("https://gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .h-100 {
@@ -31,7 +37,7 @@ a {
 }
 
 #header-bar {
-  height: 100px;
+  height: 55px;
   position: fixed;
   background: #fff;
   border-bottom: solid;
@@ -69,9 +75,18 @@ a {
 }
 
 .survey-link {
-  padding: 10px;
+  font: bold 17px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid green;
+  border-right: 1px solid green;
+  border-bottom: 1px solid green;
+  border-left: 1px solid green;
   position: relative;
-  bottom: -100px;
+  bottom: -191px;
+  border-radius: 12px;
 }
 
 .homeimg {
@@ -115,10 +130,18 @@ a {
   color: white;
 }
 
-h1 {
-  display: inline;
+.project-card {
   position: relative;
-  font: 30px Helvetica, Sans-Serif;
-  letter-spacing: 9px;
-  color: rgba(0, 153, 255, 0.637);
+  bottom: 6px;
+  left: -381px;
+}
+
+#aboutus {
+  font-family: Georgia;
+}
+
+h1,
+h2,
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
