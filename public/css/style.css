@@ -1,16 +1,25 @@
 body {
-  margin: 0px;
+  margin: 1px;
 }
+
 a {
   font-family: "Open Sans", sans-serif;
 }
 
-.h-100vh {
+.about {
   height: calc(100% - 100px);
+  background-image: url("https://gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: auto;
 }
 
-.h-100 {
+.index {
   height: 100% !important;
+  background-image: url("https://s3-us-west-1.amazonaws.com/landgbucket/products/prod_0egY5e7MVw3QnA/main.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-size: auto;
 }
 
 .w-100 {
@@ -26,16 +35,22 @@ a {
 }
 
 #header-bar {
-  height: 100px;
+  height: 55px;
   position: fixed;
   background: #fff;
   border-bottom: solid;
+  background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
+  margin-top: -1px;
+  padding: 10px;
 }
 
 #brand {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 32px;
   color: #6ba4b8;
+  position: relative;
+  bottom: inherit;
+  font-family: sans-serif;
 }
 
 .nav-link:first-child {
@@ -43,10 +58,11 @@ a {
 }
 
 .nav-link {
-  font-size: 14px;
+  font-size: 17px;
   text-transform: uppercase;
   font-weight: 300;
-  color: #666;
+  color: #6ba4b8;
+  font-family: sans-serif;
 }
 
 .active {
@@ -63,9 +79,19 @@ a {
 }
 
 .survey-link {
-  padding: 10px;
+  font: bold 17px Arial;
+  text-decoration: none;
+  background-color: #eeeeee;
+  color: #333333;
+  padding: 2px 6px 2px 6px;
+  border-top: 1px solid green;
+  border-right: 1px solid green;
+  border-bottom: 1px solid green;
+  border-left: 1px solid green;
   position: relative;
-  bottom: -100px;
+  left: 2px;
+  bottom: -550px;
+  border-radius: 12px;
 }
 
 .homeimg {
@@ -73,6 +99,16 @@ a {
   border-radius: 50%;
   position: relative;
   bottom: -60px;
+}
+
+.dev-team {
+  position: relative;
+  left: 4px;
+}
+
+.social-links {
+  position: relative;
+  left: 4px;
 }
 
 .fa {
@@ -95,9 +131,29 @@ a {
 }
 
 .fa-instagram {
-  background: #125688;
+  background: linear-gradient(to right, #56ab2f, #a8e063);
   color: white;
 }
 .plantCard {
   border-bottom: solid 1px;
+}
+
+ul {
+  position: relative;
+  left: -19px;
+}
+
+.col-xs-6 {
+  position: relative;
+  left: -304px;
+}
+
+h1,
+h2,
+p {
+  font-family: sans-serif;
+}
+
+#text {
+  color: white;
 }
