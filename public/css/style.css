@@ -86,8 +86,8 @@ a {
   border-bottom: 1px solid green;
   border-left: 1px solid green;
   position: relative;
-  left: 376px;
-  bottom: -480px;
+  left: 2px;
+  bottom: -550px;
   border-radius: 12px;
 }
 
@@ -131,32 +131,6 @@ a {
   background: linear-gradient(to right, #56ab2f, #a8e063);
   color: white;
 }
-
-.project-card {
-  position: relative;
-  bottom: 6px;
-  left: -381px;
-}
-
-#aboutus {
-  font-family: Georgia;
-}
-
-#text {
-  color: white;
-}
-
-h1,
-h2,
-p {
-  font-family: Georgia, "Times New Roman", Times, serif;
-}
-
-.results {
-  background-image: linear-gradient(to right, #c2e59c, #64b3f4);
-}
-
-ul {
-  position: relative;
-  left: -15px;
+.plantCard {
+  border-bottom: solid 1px;
 }
