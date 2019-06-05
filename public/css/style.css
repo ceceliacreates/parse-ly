@@ -41,14 +41,16 @@ a {
   border-bottom: solid;
   background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%);
   margin-top: -1px;
+  padding: 10px;
 }
 
 #brand {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 32px;
   color: #6ba4b8;
   position: relative;
   bottom: inherit;
+  font-family: sans-serif;
 }
 
 .nav-link:first-child {
@@ -60,6 +62,7 @@ a {
   text-transform: uppercase;
   font-weight: 300;
   color: #6ba4b8;
+  font-family: sans-serif;
 }
 
 .active {
@@ -133,4 +136,24 @@ a {
 }
 .plantCard {
   border-bottom: solid 1px;
+}
+
+ul {
+  position: relative;
+  left: -19px;
+}
+
+.col-xs-6 {
+  position: relative;
+  left: -304px;
+}
+
+h1,
+h2,
+p {
+  font-family: sans-serif;
+}
+
+#text {
+  color: white;
 }
