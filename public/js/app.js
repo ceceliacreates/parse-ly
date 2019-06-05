@@ -20,7 +20,7 @@ $("#survey").on("click", "button", function(event) {
       name = $("#name").val();
       $("#survey").empty();
       $("#survey").append(
-        `<h4>Hi ${name}! Do you have any pets?</h4><input type="radio" name="hasPets" id="yes" value="false"><label for="yes">Yes </label><input type="radio" name="hasPets" id="no" value="true"><label for="no">No </label><button id="question3">Next</button>`
+        `<h4>Hi ${name}! Do you have any pets?</h4><input type="radio" name="hasPets" id="yes" value="0"><label for="yes">Yes </label><input type="radio" name="hasPets" id="no" value="1"><label for="no">No </label><button id="question3">Next</button>`
       );
       break;
     case "question3":
@@ -62,7 +62,7 @@ $("#survey").on("click", "button", function(event) {
       light = $("input:checked").val();
       $("#survey").empty();
       $("#survey").append(
-        `<h4>What kind of plant are you looking for?</h4><input type="checkbox" name="plantType" id="evergreen" value="evergreen"><label for="evergreen">Evergreen</label><input type="checkbox" name="plantType" id="flower" value="flower"><label for="flower">Flower</label><input type="checkbox" name="plantType" id="succulent" value="succulent"><label for="succulent">Succulent </label><input type="checkbox" name="plantType" id="tropical" value="tropical"><label for="tropical">Tropical </label><input type="checkbox" name="plantType" id="fern" value="fern"><label for="fern">Fern </label><input type="checkbox" name="plantType" id="vine" value="vine"><label for="vine">Vine </label><input type="checkbox" name="plantType" id="shrub" value="shrub"><label for="shrub">Shrub </label><input type="checkbox" name="plantType" id="palm" value="palm"><label for="palm">Palm </label><button id="question7">Next</button>`
+        `<h4>What kind of plant are you looking for?</h4><input type="checkbox" name="plantType" id="evergreen" value="evergreen"><label for="evergreen">Evergreen</label><input type="checkbox" name="plantType" id="flower" value="flowering"><label for="flower">Flower</label><input type="checkbox" name="plantType" id="succulent" value="succulent"><label for="succulent">Succulent </label><input type="checkbox" name="plantType" id="tropical" value="tropical"><label for="tropical">Tropical </label><input type="checkbox" name="plantType" id="fern" value="fern"><label for="fern">Fern </label><input type="checkbox" name="plantType" id="vine" value="vine"><label for="vine">Vine </label><input type="checkbox" name="plantType" id="shrub" value="shrub"><label for="shrub">Shrub </label><input type="checkbox" name="plantType" id="palm" value="palm"><label for="palm">Palm </label><button id="question7">Next</button>`
       );
       break;
     case "question7":
@@ -88,8 +88,6 @@ $("#survey").on("click", "button", function(event) {
         "plantType": plantType,
         "potSize": potSize
       };
-
-      console.log(request);
       getPlantMatch();
   }
 
@@ -99,7 +97,15 @@ $("#survey").on("click", "button", function(event) {
       url: "/api/plants",
       data: request
     }).then(function (response) {
-      console.log(response);
+      response.forEach(function (plant) {
+        const name = plant.commonName;
+        const petSafe = (plant.isPoisonous == 0 ? "Yes" : "No");
+        const type = plant.plantType;
+        const light = plant.light;
+        const temperature = plant.temperature;
+        const needsDirectLight = (plant.needsDirectLight == "true" ? "Yes" : "No");
+        $("#survey").append(`<div class="plantCard"><p>Plant Name:${name}</p><p>Safe for Pets? ${petSafe}</p><p>Plant Type: ${type}</p><p>Light Needs: ${light}</p><p>Needs Direct Light? ${needsDirectLight}</p><p>Best Temperature Range: ${temperature}</p></div>`)
+      })
     })
   }
 })
