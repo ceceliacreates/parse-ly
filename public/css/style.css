@@ -48,6 +48,8 @@ a {
   font-weight: 600;
   font-size: 20px;
   color: #6ba4b8;
+  position: relative;
+  bottom: 5px;
 }
 
 .nav-link:first-child {
@@ -126,7 +128,7 @@ a {
 }
 
 .fa-instagram {
-  background: #125688;
+  background: linear-gradient(to right, #56ab2f, #a8e063);
   color: white;
 }
 
@@ -144,4 +146,8 @@ h1,
 h2,
 p {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.results {
+  background-image: linear-gradient(to right, #c2e59c, #64b3f4);
 }
