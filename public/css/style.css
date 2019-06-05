@@ -12,8 +12,7 @@ a {
 
 .h-100vh {
   height: calc(100% - 100px);
-  background: url("https://gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg")
-    no-repeat center center fixed;
+  background: url("https://gdcindia.co.in/wp-content/uploads/2019/03/contact-us-background.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -140,8 +139,10 @@ a {
   font-family: Georgia;
 }
 
-h1,
-h2,
-p {
+h1, h2, p {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.plantCard {
+  border-bottom: solid 1px;
 }
