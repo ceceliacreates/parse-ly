@@ -1,14 +1,16 @@
 # Georgia Tech Full Stack Bootcamp Project 2
 =====================
 
-### Plantish :seedling:
+### Parse.ly :seedling:
 
 An application to survey people looking to become house plant hobbyists that will match you to customized results based off your lifestyle, skill, and preferences. You will choose from your survey results and get a customized box sent to you with instructions.
 
 ### Technologies Used
 
-- Flexbox Grid
+- Flexbox-Grid CSS Library
 - jQuery
+- Express
+- Sequelize
 - Nightmare & Cheerio (webscraping)
 
 ### Challenges

@@ -1,17 +1,16 @@
-{
+module.exports = {
   "development": {
     "username": "root",
-    "password": "hotsriracha",
+    "password": process.env.DB_PASS,
     "database": "plantDB",
-    "host": "localhost",
-    "port": 3306,
+    "host": process.env.DB_HOST,
     "dialect": "mysql"
   },
   "test": {
     "username": "root",
-    "password": null,
-    "database": "database_test",
-    "host": "127.0.0.1",
+    "password": process.env.DB_PASS,
+    "database": "plantDB",
+    "host": process.env.DB_HOST,
     "dialect": "mysql"
   },
   "production": {
