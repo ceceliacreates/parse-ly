@@ -10,7 +10,7 @@ module.exports = function(app) {
   });
 
   app.post('/api/plants', function(req, res) {
-    const potSize = (req.body.plantType === "noPreference" ? ["small", "medium", "large"] : req.body.plantType);
+    const potSize = (req.body.plantType === "noPreference" ? ["small", "medium", "large"] : req.body.potSize);
     const isPoisonous = (req.body.isPoisonous == 0 ? [0] : [0, 1]);
     db.Plant.findAll({
       where: {
@@ -20,24 +20,21 @@ module.exports = function(app) {
         totalDifficulty: {
           [Op.between]: [req.body.diffRangeStart, req.body.diffRangeEnd]
         },
-        // temperature: {
-        //   [Op.contains]: req.body.temperature
-        // }
-        // light: {
-        // [Op.contains]: req.body.light
-        // }
-          
+        temperature: {
+          [Op.substring]: req.body.temperature
+        },
+        light: {
+        [Op.substring]: req.body.light
+        },
         plantType: {
           [Op.or]: req.body.plantType
         },
-      //   potSize: {
-      //     [Op.contains]: potSize
-      //   }
-      // }
-    }
-  }
-    ).then(function  (response) {
+        potSize: {
+          [Op.substring]: potSize
+        }
+      }
+    }).then(function  (response) {
       res.json(response)
     })
-  })
-};
+})
+}
