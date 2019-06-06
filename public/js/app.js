@@ -10,6 +10,7 @@ $(function() {
   let plantType;
   let potSize;
   let request;
+  let email;
 
   //button event listener with switch case for question# id
   $("#survey").on("click", "button", function(event) {
@@ -73,13 +74,20 @@ $(function() {
 
         $("#survey").empty();
         $("#survey").append(
-          `<h4>What pot size would you prefer?</h4><input type="radio" name="potSize" id="small" value="small"><label for="small">Small </label><input type="radio" name="potSize" id="medium" value="medium"><label for="medium">Medium </label><input type="radio" name="potSize" id="large" value="large"><label for="large">Large </label><input type="radio" name="potSize" id="noPreference" value="noPreference"><label for="noPreference">No preference </label><button id="submit">Submit!</button>`
+          `<h4>What pot size would you prefer?</h4><input type="radio" name="potSize" id="small" value="small"><label for="small">Small </label><input type="radio" name="potSize" id="medium" value="medium"><label for="medium">Medium </label><input type="radio" name="potSize" id="large" value="large"><label for="large">Large </label><input type="radio" name="potSize" id="noPreference" value="noPreference"><label for="noPreference">No preference </label><button id="question8">Next</button>`
         );
         break;
+      case "question8":
+          potSize = $("input:checked").val();
+          $("#survey").empty();
+          $("#survey").append(`<h4>What is your email address?</h4><input type="email" id="email"><button id="submit">Submit</button>`)
+          break;
       case "submit":
-        potSize = $("input:checked").val();
+        email = $("#email").val();
         $("#survey").empty();
         request = {
+          name: name,
+          email: email,
           isPoisonous: isPoisonous,
           diffRangeStart: diffRangeStart,
           diffRangeEnd: diffRangeEnd,
