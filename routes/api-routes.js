@@ -3,6 +3,31 @@ const Sequelize = require("sequelize");
 const Op = Sequelize.Op;
 
 module.exports = function(app) {
+  app.get('/api/users', function (req, res) {
+    db.User.findAll().then(function(users) {
+      res.json(users);
+    });
+  });
+
+  app.post('/api/users', function (req, res) {
+    db.User.findOne({
+      where: {
+        email: req.body.email
+      }
+    }).then(function (response) {
+      plants = response.results;
+      db.Plant.findAll({
+        where: {
+          commonName: {
+            [Op.or]: plants
+          }
+        }
+      }).then(function (response) {
+        res.json(response)
+      })
+    })
+  })
+
   app.get('/api/plants', function(req, res) {
     db.Plant.findAll().then(function(plants) {
       res.json(plants);
