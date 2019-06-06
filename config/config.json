@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "process.env.DB_PASS",
-    "database": "bamazon",
+    "password": "hotsriracha",
+    "database": "plantdb",
     "host": "localhost",
     "port": 3306,
     "dialect": "mysql"
