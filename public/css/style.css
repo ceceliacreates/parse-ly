@@ -31,7 +31,7 @@ a {
 
 #brand {
   font-weight: 600;
-  font-size: 20px;
+  font-size: 28px;
   background: -webkit-linear-gradient(#0bc5b8, #2ad98e);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -44,6 +44,7 @@ a {
 .nav-link {
   font-size: 14px;
   text-transform: uppercase;
+  letter-spacing: 0.05em;
   font-weight: 300;
   color: #666;
 }
@@ -66,7 +67,6 @@ main {
 
 #landing-card {
   margin: 0 auto;
-  background-color: #fff;
   height: 300px;
   display: flex;
   align-items: center;
