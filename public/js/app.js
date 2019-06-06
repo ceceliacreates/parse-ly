@@ -118,7 +118,7 @@ $(function () {
     function getPlantMatch() {
       $.ajax({
         method: "POST",
-        url: "/api/plant",
+        url: "/api/plants",
         data: request
       }).then(function (response) {
         response.forEach(function (plant) {
