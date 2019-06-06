@@ -72,12 +72,13 @@ main {
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  position: relative;
 }
 
-.title {
+h3 {
   font-size: 36px;
   font-weight: 300;
-  padding-bottom: 40px;
+  padding: 40px 0;
 }
 
 #survey-link {
@@ -107,7 +108,7 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  position: relative;
 }
 
 input {
@@ -120,9 +121,51 @@ button {
   color: #fff;
   font-weight: 600;
   padding: 15px 40px;
-  margin-top: 100px;
+  position: absolute;
+  bottom: 60px;
   border-radius: 30px;
   background: rgb(11, 197, 184);
   background: linear-gradient(90deg, rgba(11, 197, 184, 1) 0%, rgba(42, 217, 142, 1) 100%);
   border: none;
+  margin-top: 20px;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+input[type=radio]+label {
+  display: inline-block!important;
+  padding: 20px;
+  min-width: 120px;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
+
+input[type=radio]+label:hover {
+  border: 1px solid #2ad98e;
+}
+
+input[type=radio]:checked+label {
+  border: 1px solid #2ad98e;
+}
+
+input[type=checkbox]+label {
+  display: inline-block!important;
+  padding: 20px;
+  min-width: 120px;
+  border: 1px solid #ddd;
+  margin: 10px;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox]+label:hover {
+  border: 1px solid #2ad98e;
+}
+
+input[type=checkbox]:checked+label {
+  border: 1px solid #2ad98e;
 }
