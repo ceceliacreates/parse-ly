@@ -1,15 +1,14 @@
 <!DOCTYPE html>
-<html lang="en" class="h-100vh">
+<html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Parse.ly</title>
+  <title>Plantish</title>
 
-  <link rel="stylesheet" href="css/reset.css" />
+  <link rel=“stylesheet” href=“css/reset.css” />
   <link rel="stylesheet" href="css/flexboxgrid.css" />
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 
@@ -18,11 +17,11 @@
     <div class="container-fluid h-100">
       <div class="row h-100 middle-xs">
         <div class="col-sm-6 col-xs-12 start-sm center-xs">
-          <h1><a id="brand" href="/">Parse.ly</a></h1>
+          <h1><a id="brand" href="/">Plantish</a></h1>
         </div>
         <div class="col-sm-6 col-xs-12 end-sm center-xs">
           <nav>
-            <a class="nav-link" href="/about">About Us</a>
+            <a class="nav-link active" href="/about">About Us</a>
             <a class="nav-link" href="/profile">Your Account</a>
           </nav>
         </div>
@@ -31,12 +30,14 @@
   </header>
 
   <main class="h-100">
-    <div class="container-fluid h-100" id="survey-section">
-      <div class="row middle-xs center-xs h-100">
-        <div class="col-sm-6 col-xs-12" id="survey">
-          <h3 class="title">What is your name?</h3>
-          <input type="text" id="name">
-          <button id="question2">Next</button>
+    <div class="container-fluid h-100" id="main-section">
+      <div class="row center-xs">
+        <div class="col-xs-12">
+          <div id="profile">
+            <h4>What is your email address?</h4>
+            <input type="email" id="email">
+            <button id="results">See Matches</button>
+          </div>
         </div>
       </div>
       <div class="row center-xs">
@@ -52,7 +53,7 @@
   </main>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"
     integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-  <script src="js/app.js"></script>
+  <script src="js/profile.js"></script>
 
 </body>
 
