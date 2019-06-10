@@ -1,9 +1,6 @@
-# Georgia Tech Full Stack Bootcamp Project 2
-=====================
+# Parse.ly :seedling:
 
-### Parse.ly :seedling:
-
-An application to survey people looking to become house plant hobbyists that will match you to customized results based off your lifestyle, skill, and preferences. You will choose from your survey results and get a customized box sent to you with instructions.
+An application to survey people looking to become house plant hobbyists that will match you to customized results based off your lifestyle, skill, and preferences. Survey results can be saved for future reference.
 
 ### Technologies Used
 
@@ -15,10 +12,12 @@ An application to survey people looking to become house plant hobbyists that wil
 
 ### Challenges
 
-- Some database results came back with multiple values
-- Our survey results didn't match all data types in our database, we came up with way to translate the logic to compare the results and return the correct data
+- Many plants had multiple values for some table columns, requiring the use of the substring Sequelize query to find the matching value within the array of possible values
+- Survey results didn't directly match all data types in the database, requiring the translation of the logic to compare the results and return the correct data
+- Querying the database for multiple filters sometimes resulted in too few matches
+- The use of a multi-step form without a rendering framework like React required a switch case and button IDs to dynamically render to the DOM while capturing input data
 
-### Improvements
+### Future Improvements
 
 - Forum: integrate a forum-like feature where users can share feedback, personal experiences with specific plants, share tips & tricks of plant care
 - User validation/login: add validation layer to allow users to create an account to store and save plants for future purchase
