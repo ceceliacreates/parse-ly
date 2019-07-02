@@ -10,7 +10,6 @@ $("#results").on("click", function (event) {
         url: "/api/users",
         data: request
 }).then(function (response) {
-    console.log(response);
     response.forEach(function(plant) {
         const name = plant.commonName;
         const petSafe = plant.isPoisonous == 0 ? "Yes" : "No";
@@ -41,12 +40,13 @@ $("#results").on("click", function (event) {
           case "vine":
             src = "/assets/vine.svg";
         }
-        const light = plant.light;
-        const temperature = plant.temperature;
+        const light = plant.light.toString().replace(/,/g, ", ");
+        const temperature = plant.temperature.toString().replace(/,/g, ", ");
         const needsDirectLight =
           plant.needsDirectLight == "true" ? "Yes" : "No";
-        $("#profile").append(
-          `<span class="plantCard"><p>Plant Name:${name}</p><p>Safe for Pets? ${petSafe}</p><p>Plant Type: ${type}</p><img src=${src}><p>Light Needs: ${light}</p><p>Needs Direct Light? ${needsDirectLight}</p><p>Best Temperature Range: ${temperature}</p></span>`
+          $("#profile").empty();
+        $("#plants").append(
+          `<div class="plantCard"><p>Plant Name: ${name}</p><img src=${src}><p>Safe for Pets? ${petSafe}</p><p>Plant Type: ${type}</p><p>Light Needs: ${light}</p><p>Needs Direct Light? ${needsDirectLight}</p><p>Best Temperature Range: ${temperature}</p></div>`
         );
       })
 });
