@@ -35,7 +35,7 @@ module.exports = function (app) {
   });
 
   app.post('/api/plants', function (req, res) {
-    const potSize = (req.body.plantType == "noPreference" ? "medium" : req.body.potSize);
+    const potSize = req.body.potSize;
     const isPoisonous = (req.body.isPoisonous == 0 ? [0] : [0, 1]);
     const name = req.body.name;
     const email = req.body.email;
