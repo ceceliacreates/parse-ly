@@ -20,6 +20,7 @@
 
 a {
   text-decoration: none;
+  color: #0bc5b8;
 }
 
 #header-bar {
@@ -73,6 +74,24 @@ main {
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+
+#plants {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.plantCard {
+  border: solid 1px #0bc5b8;
+  border-radius: 30px;
+  width: 30%;
+  margin: 10px auto;
+  padding: 10px;
+}
+
+#survey-results {
+  display: flex;
+  flex-flow: row wrap;
 }
 
 h3 {
@@ -154,7 +173,7 @@ input[type=radio]:checked+label {
 input[type=checkbox]+label {
   display: inline-block!important;
   padding: 20px;
-  min-width: 120px;
+  min-width: 80px;
   border: 1px solid #ddd;
   margin: 10px;
 }

@@ -90,7 +90,7 @@ $(function () {
         $("#survey").append(
           `<h3>What pot size would you prefer?</h3>
           <div class="choices">
-          <input type="radio" name="potSize" id="small" value="small"><label for="small">Small </label><input type="radio" name="potSize" id="medium" value="medium"><label for="medium">Medium </label><input type="radio" name="potSize" id="large" value="large"><label for="large">Large </label><input type="radio" name="potSize" id="noPreference" value="noPreference"><label for="noPreference">No preference </label></div><button id="question8">Next</button>`
+          <input type="radio" name="potSize" id="small" value="small"><label for="small">Small </label><input type="radio" name="potSize" id="medium" value="medium"><label for="medium">Medium </label><input type="radio" name="potSize" id="large" value="large"><label for="large">Large </label></div><button id="question8">Next</button>`
         );
         break;
       case "question8":
@@ -151,12 +151,13 @@ $(function () {
             case "vine":
               src = "/assets/vine.svg";
           }
-          const light = plant.light;
-          const temperature = plant.temperature;
+          const light = plant.light.toString().replace(/,/g, ", ");
+          const temperature = plant.temperature.toString().replace(/,/g, ", ");
           const needsDirectLight =
             plant.needsDirectLight == "true" ? "Yes" : "No";
-          $("#survey").append(
-            `<span class="plantCard"><p>Plant Name:${name}</p><p>Safe for Pets? ${petSafe}</p><p>Plant Type: ${type}</p><img src=${src}><p>Light Needs: ${light}</p><p>Needs Direct Light? ${needsDirectLight}</p><p>Best Temperature Range: ${temperature}</p></span>`
+            $("#survey-section").remove();
+          $("#survey-results").append(
+            `<span class="plantCard"><p>Plant Name: ${name}</p><img src=${src}><p>Safe for Pets? ${petSafe}</p><p>Plant Type: ${type}</p><p>Light Needs: ${light}</p><p>Needs Direct Light? ${needsDirectLight}</p><p>Best Temperature Range: ${temperature}</p></span>`
           );
         });
       });
